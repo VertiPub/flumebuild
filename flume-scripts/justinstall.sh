@@ -7,7 +7,7 @@ echo "Building Flume Version RPM ${RPM_NAME} with RPM version ${RPM_VERSION}-${D
 export RPM_BUILD_DIR=${INSTALL_DIR}/opt
 mkdir --mode=0755 -p ${RPM_BUILD_DIR}
 cd ${RPM_BUILD_DIR}
-tar -xvzpf ${WORKSPACE}/flume/flume-ng-dist/target/apache-flume-${ARTIFACT_VERSION}.tar.gz
+tar -xvzpf ${WORKSPACE}/flume/flume-ng-dist/target/apache-flume-${ARTIFACT_VERSION}-bin.tar.gz
 
 cd ${RPM_DIR}
 fpm --verbose \
